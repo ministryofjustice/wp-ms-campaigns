@@ -97,14 +97,6 @@ Access to this repository is restricted. Refer to internal documentation for fur
 
 Theme assets can be built as part of the docker image. Add required commands to `bin/build.sh`.
 
-### Configure the default theme
-
-Set your theme as the default by adding the following line to `config/application.php`:
-
-```php
-define('WP_DEFAULT_THEME', 'clarity');
-```
-
 ## WP-CLI
 
 The [WordPress CLI](https://wp-cli.org/) is a useful tool for running commands against your WordPress installation.
@@ -146,13 +138,13 @@ There are several `make` commands configured in the `Makefile`. These are mostly
 | `make run`          | Alias of `docker-compose up`. Launch the application locally using `docker-compose`.                                                                                                                 |
 | `make down`         | Alias of `docker-compose down`.                                                                                                                                                                      |
 | `make bash`         | Open a bash shell on the WordPress docker container. The [WP-CLI](https://wp-cli.org/) is accessible as `wp`. The application must already be running (e.g. via `make run`) before this can be used. |
-| `make launch`       | Checks if the intranet docker instance is running; if not, launch docker in the background and open the site in the systems default browser                                                          |
+| `make launch`       | Checks if the docker instance is running; if not, launch docker in the background and open the site in the systems default browser                                                          |
 | `make test`         | Run tests on the application. Out of the box this will run PHP CodeSniffer (code linter).                                                                                                            |
 | `make test-fixes`   | Fix issues found during `make test`                                                                                                                                                                  |
 
 ## IP whitelisting
 
-The Intranet manages IP whitelisting in a different way to most other deployments. In March 2020 authentication via IdP
+Some protected sites manage IP whitelisting in a different way to other deployments. In March 2020 authentication via IdP
 was introduced to present access to the MoJ wider network and as a result, IP whitelists moved to AWS ALB listener rules.
 
 To help manage ALB rule creation 2 scripts are available in the JotW LastPass account.
