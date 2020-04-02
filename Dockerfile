@@ -1,4 +1,4 @@
-FROM mojdigital/wordpress-base:latest
+FROM ministryofjustice/wp-multisite-base:latest
 
 ADD . /bedrock
 
@@ -9,7 +9,6 @@ ARG COMPOSER_PASS
 
 # Add custom nginx config and init script
 RUN sed -i 's/fastcgi_intercept_errors off;/fastcgi_intercept_errors on;/' /etc/nginx/php-fpm.conf && \
-    mv docker/conf/nginx/server.conf /etc/nginx/sites-available/ && \
     mv docker/init/configure-maintenance-mode.sh /etc/my_init.d/ && \
     chmod +x /etc/my_init.d/configure-maintenance-mode.sh
 

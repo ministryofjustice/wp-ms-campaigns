@@ -10,16 +10,17 @@ set -e
 # Install PHP dependencies (WordPress, plugins, etc.)
 composer install
 
-
 # Build theme assets
-# ~ enter theme path and uncomment the following commands:
-
-# cd web/app/themes/
-# npm install
-# npm run production
-# rm -rf node_modules
-# cd ../../../..
-
+# Supports multiple themes
+for d in web/app/themes/*; do
+  if [[ -f "$d/package.json" ]]; then
+    cd "$d"
+    npm install
+    npm run production
+    rm -rf node_modules
+    cd ../../../..
+  fi
+done
 
 # Remove composer auth.json
-# rm -f auth.json
+rm -f auth.json

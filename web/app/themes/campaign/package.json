@@ -1,0 +1,39 @@
+{
+  "name": "moj-campaign",
+  "version": "1.0.0",
+  "description": "Campaign theme package manager",
+  "main": "index.js",
+  "author": "Ministry of Justice: Justice on the Web",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ministryofjustice/wp-ms-campaigns.git"
+  },
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "scripts": {
+    "dev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.1.0",
+    "laravel-mix": "^4.1.4",
+    "laravel-mix-imagemin": "^1.0.3",
+    "laravel-mix-svg": "^0.4.1",
+    "node-sass": "^4.13.1",
+    "resolve-url-loader": "^3.1.0",
+    "sass": "^1.26.1",
+    "sass-loader": "^7.3.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.1.1",
+    "bootstrap": "^4.4.1"
+  }
+}

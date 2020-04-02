@@ -36,7 +36,8 @@ if (file_exists($env_config)) {
  * URLs
  */
 define('WP_HOME', env('WP_HOME'));
-define('WP_SITEURL', env('WP_SITEURL'));
+define('WP_SITEURL', env('WP_HOME'));
+define('COOKIE_DOMAIN', env('SERVER_NAME'));
 
 /**
  * Custom Content Directory
@@ -75,6 +76,7 @@ define('AUTOMATIC_UPDATER_DISABLED', true);
 define('DISABLE_WP_CRON', true);
 define('DISALLOW_FILE_EDIT', true);
 define('S3_UPLOADS_BASE_URL', getenv('S3_UPLOADS_BASE_URL') ? getenv('S3_UPLOADS_BASE_URL') : false);
+define('WP_DEFAULT_THEME', 'campaign');
 
 /**
  * Bootstrap WordPress

@@ -1,9 +1,13 @@
 # Editor
 .idea*
-._D*
+.DS_*
+._DS_*
 ._.*
 
+*.sql
+
 # Application
+web/.well-known/*
 web/app/plugins/*
 !web/app/plugins/.gitkeep
 web/app/mu-plugins/*/
@@ -12,9 +16,19 @@ web/app/languages
 web/app/uploads/*
 !web/app/uploads/.gitkeep
 
+web/app/cache
+
+# Theme
+web/app/themes/*/dist/*
+!web/app/themes/*/dist/*.md
+web/app/themes/*/node_modules
+
 # WordPress
 web/wp
 web/.htaccess
+
+# auto-generated so ignore
+web/wp-config.php
 
 # Dotenv
 .env
