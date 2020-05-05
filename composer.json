@@ -27,15 +27,20 @@
     "koodimonni-language/core-en_gb": "*",
     "oscarotero/env": "^1.1.0",
     "roots/wp-password-bcrypt": "*",
+    "acf/advanced-custom-fields-pro": "*",
+    "relevanssi/relevanssi-premium": "*",
     "wpackagist-plugin/wp-analytify":"*",
     "wpackagist-plugin/analytify-analytics-dashboard-widget":"*",
-    "ministryofjustice/wp-rewrite-media-to-s3": "*",
-    "acf/advanced-custom-fields-pro": "*",
+    "wpackagist-plugin/query-monitor": "*",
     "wpackagist-plugin/wordpress-seo": "*",
+    "wpackagist-plugin/ewww-image-optimizer": "*",
     "wpackagist-plugin/classic-editor": "*",
+    "wpackagist-plugin/contact-form-7": "*",
     "wpackagist-plugin/fast-user-switching": "*",
+    "ministryofjustice/wp-rewrite-media-to-s3": "*",
     "ministryofjustice/wp-moj-components": "*",
-    "ministryofjustice/wp-user-roles": "*"
+    "ministryofjustice/wp-user-roles": "*",
+    "ministryofjustice/cookie-compliance-for-wordpress": "dev-brookhouse"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2"

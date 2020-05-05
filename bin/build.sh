@@ -14,6 +14,9 @@ composer install
 # Supports multiple themes
 for d in web/app/themes/*; do
   if [[ -f "$d/package.json" ]]; then
+    echo "***"
+    echo "Compiliing $d"
+    echo "***"
     cd "$d"
     npm install
     npm run production
