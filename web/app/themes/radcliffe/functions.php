@@ -24,15 +24,17 @@ function getPostTypesWithFeaturedImage()
     return ['post', 'news'];
 }
 
-require get_template_directory() . '/inc/setup.php';
+require 'inc/setup.php';
 
-require get_template_directory() . '/inc/general.php';
+require 'inc/general.php';
 
-require get_template_directory() . '/inc/gutenberg.php';
+require 'inc/gutenberg.php';
 
-require get_template_directory() . '/inc/acf-options.php';
+require 'inc/acf-options.php';
 
-require get_template_directory() . '/inc/media.php';
+require 'inc/media.php';
+
+require 'inc/custom-post-types.php';
 
 /* ---------------------------------------------------------------------------------------------
    SHORTCODES
