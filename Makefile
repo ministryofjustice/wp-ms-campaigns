@@ -4,6 +4,10 @@ default: build
 build:
 	bin/build.sh
 
+# Run the project build script
+upgrade:
+	bin/upgrade.sh
+
 # Remove ignored git files – e.g. composer dependencies and built theme assets
 # But keep .env file, .idea directory (PhpStorm config), and uploaded media files
 clean:
@@ -19,7 +23,7 @@ docker-clean:
 
 # Run the application
 run:
-	cp .env.example .env
+	@if [ ! -e ".env" ]; then cp .env.example .env; fi
 	docker-compose up
 
 # Stop the application
