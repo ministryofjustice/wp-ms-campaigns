@@ -660,20 +660,23 @@
         },
         {
             "name": "ministryofjustice/wp-rewrite-media-to-s3",
-            "version": "0.2.10",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ministryofjustice/wp-rewrite-media-to-s3.git",
-                "reference": "eafe3b165fe3fa0630b011439317ae3b3b3100e4"
+                "reference": "8435d045b36c4f7174f420c903ef86cb659bd5c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/wp-rewrite-media-to-s3/ministryofjustice-wp-rewrite-media-to-s3-eafe3b165fe3fa0630b011439317ae3b3b3100e4-zip-3a74e0.zip",
-                "reference": "eafe3b165fe3fa0630b011439317ae3b3b3100e4",
-                "shasum": "2980ada9ac27be3e79d90abfe4ecc84eb83c90d6"
+                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/wp-rewrite-media-to-s3/ministryofjustice-wp-rewrite-media-to-s3-8435d045b36c4f7174f420c903ef86cb659bd5c0-zip-a7ac30.zip",
+                "reference": "8435d045b36c4f7174f420c903ef86cb659bd5c0",
+                "shasum": "af15a9fc3181b6612a7e72ee785adf8b0de2c657"
             },
             "require": {
                 "composer/installers": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.1"
             },
             "type": "wordpress-plugin",
             "authors": [
@@ -684,10 +687,10 @@
             ],
             "description": "A WordPress plugin which rewrites media attachment URLs to S3.",
             "support": {
-                "source": "https://github.com/ministryofjustice/wp-rewrite-media-to-s3/tree/0.2.10",
+                "source": "https://github.com/ministryofjustice/wp-rewrite-media-to-s3/tree/0.3.0",
                 "issues": "https://github.com/ministryofjustice/wp-rewrite-media-to-s3/issues"
             },
-            "time": "2020-04-09T16:11:27+00:00"
+            "time": "2020-05-06T17:15:23+00:00"
         },
         {
             "name": "ministryofjustice/wp-user-roles",
