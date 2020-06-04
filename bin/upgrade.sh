@@ -21,7 +21,7 @@ fi
 for d in web/app/themes/*; do
   if [[ -f "$d/package.json" ]]; then
     echo "***"
-    echo "Compiliing $d"
+    echo "Upgrading dependancies in $d/package.json"
     echo "***"
     cd "$d"
     npm-upgrade
